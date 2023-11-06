@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="meny-wrapper">
+      <div class="logo">
+        <img src="./images/react.svg" alt="react logo" />
+        <h3>Firmanavn</h3>
+      </div>
+      <nav class="nav-container">
+        <ul>
+          <li>
+            <a href="https://www.vg.no" target="_blank">Go to vg</a>
+          </li>
+          <li>
+            <a href="https://github.com" target="_blank">Go to github</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- end menywrapper -->
+
+    <div class="slogan-wrapper">
+      <h1 class="slogan-text">Vi leverer store tjenester til små bedrifter.</h1>
+      <img src="./images/pexels-pixabay-534174.jpg" alt="" />
+    </div>
+
+    <main>
+      <section>
+        <h2>Koding og <span>!design</span> in one go!</h2>
+
+        <p>
+          Denne siden er responsive for desktop, Ipad og mobil. Testet i
+          Responsive Design Mode i browser.
+        </p>
+        <p>
+          CSS testet w3school validator med resultat "No Error Found. This
+          document validates as CSS level 3 + SVG" (hva nå enn det betyr..)
+        </p>
+        <p>HTML testet w3school validator med resultat noen info og warning.</p>
+        <h3>Mål:</h3>
+        <p>
+          Se hvor mye jeg kan sette opp uten å bruke oppslag/internett. Gikk bra
+          tilogmed enkel flexbox og css grid. Ønsket at første "div" skulle span
+          fullwidht. Fikk til noe i css grid. Ikke i flexbox.
+        </p>
+        <h3>Bli bedre på:</h3>
+        <p>
+          Må trene mer på css grid og flexbox. (Tenker css grid for layout og
+          flexbox for posisjonering av elementer i grid.) Må også trene mer på
+          DRY.
+        </p>
+      </section>
+
+      <section>
+        <div id="grid-container">
+          <div class="tjenester"><h2>Våre tjenester</h2></div>
+
+          <div class="box box1">
+            <h2>.grid-container</h2>
+            <h3 id="browser-width"></h3>
+            <p>CSS Grid responsive - h3 .box .box3</p>
+          </div>
+
+          <div class="box box2">
+            <h3>CSS Grid responsive - h3 .box .box3:nth-child(2)</h3>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium dolores recusandae necessitatibus doloribus
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="flexbox">
+          <div class="tjenester">Våre tjenester</div>
+          <div class="box box1">
+            <h3>Stor</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium dolores recusandae
+            </p>
+          </div>
+          <div class="box box2">
+            <h3>Større</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium dolores
+            </p>
+          </div>
+          <div class="box box3">
+            <h3>Størst</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium dolores recusandae
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <i class="fa-brands fa-react fa-spin"></i>
+      </section>
+    </main>
+    <footer>footer</footer>
+    <script src="./src/javascript.js"></script>
+  </body>
+</html>

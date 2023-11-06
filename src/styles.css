@@ -1,0 +1,371 @@
+:root {
+
+  /* FARGER DESKTOP header og footer, .flexbox 
+  over 993px */
+  --header-footer-desktop: rgba(37, 148, 199, 0.903); /* header og footer var(--header-footer-desktop) */
+ 
+ --slogan-background-desktop: #a33ce7; /* var(--slogan-background-desktop) bakgrunnsfarge på slogan */
+ 
+ /* FARGER DESKTOP LOGO */
+  --logo-farge: rgb(224, 224, 224); /* header og footer var(--logo-farge) */
+
+  /* FARGER MOBIL skifter bakgrunnsfarge header og footer, .flexbox 
+  under 993px */
+  --header-footer-mobil: rgb(37, 123, 199); /* var(--header-footer-mobil) header og footer */
+  --slogan-background-mobil: #42e73c; /* var(--slogan-background-mobil) bakgrunnsfarge på slogan */
+
+
+  /* PADDING FLEXBOX CONTAINER DESKTOP #main, div.flexbox */
+  --flexbox-container-padding-desktop:4rem; /* var(--flexbox-container-padding-desktop) padding flexbox desktop*/
+
+  /* PADDING FLEXBOX CONTAINER MOBIL div.flexbox */
+  --flexbox-container-padding-mobil:1rem; /* var(--flexbox-container-padding-mobil) padding flexbox mobil*/
+
+
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding:0;
+  }
+
+ 
+
+  
+html {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+
+body {
+    max-width: 1200px;
+   background:rgb(163, 163, 163);
+  /* font-size:1.4rem; */
+  margin-top:3vh;
+  }
+
+  main {
+    min-height: 80vh;
+    background:rgb(228, 228, 228);
+    padding:var(--flexbox-container-padding-desktop);
+  }
+
+
+h1, h2, h3, p {
+  color: rgb(85, 85, 85);
+  line-height: 1.5;
+}
+
+h1 { font-size: calc(1.7rem + 1.7rem);}
+h2 { font-size: calc(1.3rem + 0.75vw); margin-bottom:1rem; text-transform:capitalize;} 
+h3 { font-size: calc(1.2rem + 0.55vw); margin:0.5rem; } 
+p { font-size: calc(1rem + 0.4vw); font-weight: 100;}
+
+
+a { text-decoration: none;}
+
+span {
+  font-size: 2rem;
+  color: rgb(243, 243, 243);
+  background:rgb(221, 41, 41);
+  padding: 0.5rem 0.5rem;
+  border-radius:4px;
+}
+
+
+
+.meny-wrapper{
+display:flex;
+gap:1rem;
+position:sticky;
+top:0;
+z-index: 99;
+
+background: var(--header-footer-desktop);
+padding:1rem;
+justify-content: space-between;
+align-items: center;
+}
+
+
+  nav ul {
+    
+    display:flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+   
+    
+  }
+
+  /* hj */
+  nav li a {
+   
+    
+    padding: 1rem 2rem;
+    background-color: rgb(141, 207, 161);
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+  
+  }
+
+  nav li a:hover{
+    padding: 1rem 2rem;
+    background: rgb(166, 243, 194);
+    color: black;
+  }
+
+
+  
+  /* hoved bildet og slogan text wrapper */
+  .slogan-wrapper {
+   
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-items: center;
+   
+  
+  }
+/* hoved bildet */
+  .slogan-wrapper img{
+   
+    width:100%;
+    height:500px;
+    object-fit: cover;
+    
+  }
+/* 1 h1 tag på siden - firma slogan */
+  h1.slogan-text{
+   
+    position:absolute;
+    bottom:2rem;
+    left:2rem;
+   color:white;
+   font-size:1.5rem;
+   text-transform: uppercase;
+   font-weight: 100;
+   letter-spacing: 1px;
+    z-index: 33;
+    padding:0.5rem 1rem;
+    background: var(--slogan-background-desktop);
+    border-radius:4px;
+    max-width: 85%;
+
+  }
+ 
+
+  div.logo{
+   
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+  }
+  div.logo h3{
+    color:var(--logo-farge);
+  }
+
+  div.logo img {
+  
+    width:60px;
+    height:60px;
+    padding:5px;
+
+
+
+
+  }
+
+  #grid-container{
+    display:grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+
+    grid-gap:1rem;
+    margin-top:3rem;
+  }
+
+  #grid-container .tjenester {
+    grid-column: 1 / -1;
+    border-radius:4px;
+    background:lightblue;
+    padding:1rem;
+    justify-content: center;
+
+
+
+  }
+
+  /* FLEX CONTAINER */
+  div.flexbox{
+    display:flex;
+    flex-direction: row;
+    /* flex-flow: row wrap; */
+    gap:1rem;
+
+    background:var(--header-footer-desktop);
+    padding:var(--flexbox-container-padding-desktop);
+    
+    border-radius:4px;
+    margin-top:1rem;
+    
+  }
+
+  /* OVERSKRIFT FLEX CONINER TJENESTER */
+ 
+
+  /*? div boxer */
+  /*! bare test av better comments */
+  
+  .box {
+   
+    border-radius: 4px;
+    line-height: 1.3;
+    padding:2rem;
+
+    width:100%;
+   
+  }
+
+  .box1 {
+
+    background-color: rgb(141, 207, 161);
+    color:white;
+    
+      }
+    
+    .box2{
+     
+    background-color: rgb(195, 141, 207);
+    color:white;
+       
+    }
+    
+    .box3{
+      
+    background-color: rgb(141, 172, 207);
+            
+    color:white;
+    }
+
+
+  
+  footer {
+    background-color: var(--header-footer-desktop);
+    height: 200px;
+    padding:2rem;
+
+  }
+
+
+  @media only screen and (max-width: 800px){ 
+    div.flexbox, .meny-wrapper, .meny-wrapper ul{
+    
+      display:flex;
+      flex-direction: column;
+      gap:1rem;
+        
+      list-style-type: none;
+      justify-content: center;
+      align-items: center;
+       
+      width:100%;
+    
+      position:static;
+      padding-bottom: 0.5rem;
+
+      
+    }
+
+    body{
+      margin-top:0;
+    }
+    /* header */
+    .meny-wrapper{
+      background-color: var(--header-footer-mobil) ;
+    }
+    div.flexbox{
+    padding:var(--flexbox-container-padding-mobil);
+    background-color: var(--header-footer-mobil);
+    }
+    footer {
+      background-color: var(--header-footer-mobil);
+    }
+
+    main {
+    min-height: 80vh;
+    background:rgb(255, 255, 238);
+    padding:var(--flexbox-container-padding-mobil);
+    padding-top:3rem;
+    }
+
+    
+
+    nav li a {
+    background-color: transparent;
+    padding: 0rem 0rem;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+    }
+
+    nav li a:hover{
+      background-color: transparent;
+      padding: 0rem 0rem;
+      text-decoration: underline;
+      color: black;
+      
+    }
+
+    #grid-container{
+      display:grid;
+      grid-template-columns: repeat(1, minmax(250px, 1fr));
+  
+      grid-gap:0.5rem;
+      margin-top:1rem;
+  
+    }
+
+    .tjenester {
+      grid-column: span 1;
+      width:100%;
+      border-radius:4px;
+  
+    }
+
+    h1.slogan-text{
+   
+      position:absolute;
+      bottom:20px;
+      left:2rem;
+     color:rgb(66, 66, 66);
+     font-size:calc(0.5rem + 1.5rem);
+      z-index: 33;
+      padding:0.5rem 1rem;
+      background:var(--slogan-background-mobil);
+      border-radius:4px;
+      line-height: 1.5;
+      font-size: 1.2rem;
+  
+    }
+    .slogan-wrapper img{
+
+      height:300px;
+    }
+
+  }
+
+  
+ 
