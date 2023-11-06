@@ -423,6 +423,14 @@ border-radius:4px;
       height:300px;
     }
 
+/* Flexbox NO scale on mobile */
+    .flex-box:hover{
+      background-color: rgb(141, 207, 161);
+      padding:0;
+      transform: scale(1.0);
+      color:antiquewhite;
+    }
+
   }
 
   
