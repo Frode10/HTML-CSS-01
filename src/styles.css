@@ -222,7 +222,7 @@ align-items: center;
     
   }
 
-  /* OVERSKRIFT FLEX CONINER TJENESTER */
+  /* OVERSKRIFT FLEX CONINER TJENESTER 
   .flex-container .flex-tjenester {
     flex:3;
     background-color: orange;
@@ -231,7 +231,7 @@ align-items: center;
 border-radius:4px;
 
 
-  }
+  } */
 
   /*? div boxer */
   /*! bare test av better comments */
@@ -278,7 +278,7 @@ border-radius:4px;
 
 
   @media only screen and (max-width: 800px){ 
-    div.flexbox, .meny-wrapper, .meny-wrapper ul{
+    div.flex-container, .meny-wrapper, .meny-wrapper ul{
     
       display:flex;
       flex-direction: column;
@@ -303,7 +303,7 @@ border-radius:4px;
     .meny-wrapper{
       background-color: var(--header-footer-mobil) ;
     }
-    div.flexbox{
+    div.flex-container{
     padding:var(--flexbox-container-padding-mobil);
     background-color: var(--header-footer-mobil);
     }
