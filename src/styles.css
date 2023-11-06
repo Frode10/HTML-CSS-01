@@ -12,7 +12,7 @@
   /* FARGER MOBIL skifter bakgrunnsfarge header og footer, .flexbox 
   under 993px */
   --header-footer-mobil: rgb(37, 123, 199); /* var(--header-footer-mobil) header og footer */
-  --slogan-background-mobil: #42e73c; /* var(--slogan-background-mobil) bakgrunnsfarge på slogan */
+  --slogan-background-mobil: #43db43; /* var(--slogan-background-mobil) bakgrunnsfarge på slogan */
 
 
   /* PADDING FLEXBOX CONTAINER DESKTOP #main, div.flexbox */
@@ -38,6 +38,8 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  scroll-behavior: smooth;
 } 
 
 body {
@@ -118,13 +120,14 @@ align-items: center;
     border-radius: 5px;
     font-size: 16px;
     text-transform: uppercase;
+    transition: all 1s ease-out;
   
   }
 
   nav li a:hover{
     padding: 1rem 2rem;
-    background: rgb(166, 243, 194);
-    color: black;
+    background: rgb(243, 216, 166);
+    color: rgb(126, 126, 126);
   }
 
 
@@ -200,7 +203,7 @@ align-items: center;
   #grid-container .tjenester {
     grid-column: 1 / -1;
     border-radius:4px;
-    background:lightblue;
+    background: var(--header-footer-desktop);
     padding:2rem;
     justify-content: center;
 
@@ -458,7 +461,27 @@ letter-spacing: 1px;
       color:antiquewhite;
     }
 
+
+
+    .footer-grid-container{
+
+      display:grid;
+      grid-template-columns: repeat(1, minmax(25%, 1fr));
+      gap:0.5rem;
+    
+      background-color: var(--header-footer-desktop);
+      
+      padding:1rem;
+  min-height:30rem;
+  
+    }
+
+
+
+
   }
+
+
 
   
  
