@@ -54,7 +54,7 @@
             <p>
               Se hvor mye jeg kan sette opp uten å bruke oppslag/internett. Gikk
               bra tilogmed enkel flexbox og css grid. Ønsket at første "div"
-              skulle span fullwidht. Fikk til noe i css grid. Ikke i flexbox.
+              skulle span 2 columns. Fungerer men ikke helt 100% kode.
             </p>
             <h4>Bli bedre på:</h4>
             <p>
@@ -71,6 +71,9 @@
               VScode - ctrl + D velger "flere classer med samme navn" Hold inne
               ALT og flytt hele linjen. Comment flere linjer Ctrl + H U Ikke
               bruk class på alt - tenk dry, tenk kanskje typ section div > * {}
+              CSS viktig å huske: Css leser nedover så det siste som er definert
+              vil fungere. Se box og flex-box (bildebox), flytt den over box og
+              fungerer ikke.
             </p>
           </div>
         </div>
@@ -79,22 +82,37 @@
       <section>
         <div class="flex-container">
           <!-- <div class="flex-tjenester">Våre tjenester</div> -->
-          <div class="box box1">
+          <div class="box box1 flex-box">
             <h3>Stor</h3>
+            <div class="flex-bilder">
+              <img
+                src="./images/pexels-steve-johnson-1843716.jpg"
+                alt="Alfa bil"
+              />
+            </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Praesentium dolores recusandae
             </p>
           </div>
-          <div class="box box2">
+          <div class="box box2 flex-box">
             <h3>Større</h3>
+            <div class="flex-bilder">
+              <img src="./images/alfa.jpg" alt="Alfa bil" />
+            </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Praesentium dolores
             </p>
           </div>
-          <div class="box box3">
+          <div class="box box3 flex-box">
             <h3>Størst</h3>
+            <div class="flex-bilder">
+              <img
+                src="./images/pexels-stacey-koenitz-r-2425011.jpg"
+                alt="Alfa bil"
+              />
+            </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Praesentium dolores recusandae

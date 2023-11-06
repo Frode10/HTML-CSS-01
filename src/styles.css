@@ -200,7 +200,7 @@ align-items: center;
     grid-column: 1 / -1;
     border-radius:4px;
     background:lightblue;
-    padding:1rem;
+    padding:2rem;
     justify-content: center;
 
 
@@ -222,6 +222,22 @@ align-items: center;
     
   }
 
+  .flex-bilder{
+   
+   background:transparent;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:1rem;
+  
+  }
+  .flex-bilder img{
+    width:100%;
+    height: 200px;
+    object-fit: cover;
+    
+  }
+
+
   /* OVERSKRIFT FLEX CONINER TJENESTER 
   .flex-container .flex-tjenester {
     flex:3;
@@ -235,7 +251,8 @@ border-radius:4px;
 
   /*? div boxer */
   /*! bare test av better comments */
-  
+ 
+
   .box {
    
     border-radius: 4px;
@@ -245,6 +262,23 @@ border-radius:4px;
     width:100%;
    
   }
+
+   /* Design bildeboxer i flexcontainer */
+   .flex-box{
+    background:red;
+    padding:0;
+  }
+  .flex-box p{
+    padding-left:1.3rem;
+    padding-bottom:1.3rem;
+    font-size: 1rem;
+  }
+  .flex-box h3 {
+    padding-left:1.3rem;
+    font-size: 2rem;
+  }
+
+
 
   .box1 {
 
