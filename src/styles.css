@@ -264,21 +264,7 @@ border-radius:4px;
    
   }
 
-   /* Design bildeboxer i flexcontainer */
-   .flex-box{
-    background:red;
-    padding:0;
-  }
-  .flex-box p{
-    padding-left:1.3rem;
-    padding-bottom:1.3rem;
-    font-size: 1rem;
-  }
-  .flex-box h3 {
-    padding-left:1.3rem;
-    font-size: 2rem;
-  }
-
+  
 
 
   .box1 {
@@ -297,10 +283,38 @@ border-radius:4px;
     
     .box3{
       
-    background-color: rgb(141, 172, 207);
+    background-color: rgb(217, 235, 255);
             
     color:white;
     }
+
+     /* Design bildeboxer i flexcontainer */
+     /* VIKTIG: Satt under box1 box2 osv for å kunne override background color. */
+      /* VIKTIG: Setter du dem over box1 box2 etc vil flex-boxene få forskjellige farger.  */
+
+   .flex-box{
+    background-color: rgb(227, 227, 227);
+    padding:0;
+    transition: transform 0.5s ease-in-out;
+  }
+  .flex-box:hover{
+    background-color: rgb(141, 207, 161);
+    padding:0;
+    transform: scale(1.1);
+    color:antiquewhite;
+  }
+  .flex-box p{
+    padding-left:1.3rem;
+    padding-bottom:1.3rem;
+    font-size: 1rem;
+   
+  }
+  .flex-box h3 {
+    padding-left:1.3rem;
+    font-size: 2rem;
+    
+  }
+/* END FLEX BOXER */
 
 
   
