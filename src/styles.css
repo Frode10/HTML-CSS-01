@@ -16,7 +16,7 @@
 
 
   /* PADDING FLEXBOX CONTAINER DESKTOP #main, div.flexbox */
-  --flexbox-container-padding-desktop:2rem; /* var(--flexbox-container-padding-desktop) padding flexbox desktop*/
+  --flexbox-container-padding-desktop:1rem; /* var(--flexbox-container-padding-desktop) padding flexbox desktop*/
 
   /* PADDING FLEXBOX CONTAINER MOBIL div.flexbox */
   --flexbox-container-padding-mobil:0.5rem; /* var(--flexbox-container-padding-mobil) padding flexbox mobil*/
@@ -47,6 +47,7 @@ body {
    background:rgb(163, 163, 163);
   /* font-size:1.4rem; */
   margin-top:3vh;
+  margin-bottom:3vh;
   }
 
   main {
