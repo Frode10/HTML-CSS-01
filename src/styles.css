@@ -2,9 +2,9 @@
 
   /* FARGER DESKTOP header og footer, .flexbox 
   over 993px */
-  --header-footer-desktop: rgba(37, 148, 199, 0.903); /* header og footer var(--header-footer-desktop) */
+  --header-footer-desktop: rgba(37, 118, 199, 0.862); /* header og footer var(--header-footer-desktop) */
  
- --slogan-background-desktop: #a33ce7; /* var(--slogan-background-desktop) bakgrunnsfarge på slogan */
+ --slogan-background-desktop: #3c6fe7c6; /* var(--slogan-background-desktop) bakgrunnsfarge på slogan */
  
  /* FARGER DESKTOP LOGO */
   --logo-farge: rgb(224, 224, 224); /* header og footer var(--logo-farge) */
@@ -22,6 +22,8 @@
   --flexbox-container-padding-mobil:0.5rem; /* var(--flexbox-container-padding-mobil) padding flexbox mobil*/
 
 
+  /* FILTER PÅ HOVEDBILDET */
+  --violet-filter-strength: 20deg; /* Adjust the degree value as needed */
 }
 
 * {
@@ -131,10 +133,14 @@ align-items: center;
     color: rgb(126, 126, 126);
   }
 
-
+  .violet-filter{
+    filter: hue-rotate(VAR(--violet-filter-strength)); /* 270 degrees corresponds to violet in the CSS color wheel */
+  
+  }
   
   /* hoved bildet og slogan text wrapper */
   .slogan-wrapper {
+
    
     position:relative;
     display:flex;
@@ -337,6 +343,7 @@ height:30rem;
 
   .footer-grid-container > * {
     font-family:Arial, Helvetica, sans-serif;
+  
 color: rgb(228, 228, 228);
 background:rgba(255, 255, 255, 0.060);
 padding:1rem;
@@ -352,8 +359,21 @@ letter-spacing: 1px;
     display:flex;
     align-items: center;
     justify-content: center;
-    
+    font-size: 0.7rem;
     background:cadetblue;
+  }
+
+  .footer-grid-container > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 100;
+  }
+
+  .footer-grid-container > div p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 100;
+    color: rgb(228, 228, 228);
   }
 
 
@@ -472,10 +492,15 @@ letter-spacing: 1px;
     
       background-color: var(--header-footer-desktop);
       
+     
+
       padding:1rem;
-  min-height:30rem;
+      min-height:30rem;
   
     }
+
+    /* DU er nå under media query */
+
 
 
 
