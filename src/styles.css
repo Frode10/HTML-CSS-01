@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@300&display=swap');
+
+/* LASTET NED FONT I FONT MAPPE 
+@font-face{
+  font-family: "fanasia";
+  src: utl("/fantasya.otf");
+}
+*/
+
 :root {
 
   /* FARGER DESKTOP header og footer, .flexbox 
@@ -33,9 +43,9 @@
   }
 
  
-
   
 html {
+  
   display:flex;
   flex-direction: column;
   justify-content: center;
@@ -45,11 +55,14 @@ html {
 } 
 
 body {
-    max-width: 1200px;
+  font-family: 'Alumni Sans Inline One', sans-serif;   
+  max-width: 1200px;
    background:rgb(163, 163, 163);
   /* font-size:1.4rem; */
   margin-top:3vh;
   margin-bottom:3vh;
+  color:rgb(56, 56, 56);
+
   }
 
   main {
@@ -59,17 +72,20 @@ body {
   }
 
 
-h1, h2, h3, p {
-  color: rgb(85, 85, 85);
+h1, h2, h3 {
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  margin-bottom:0.8rem;
+}
+p {
   line-height: 1.5;
 }
 
 h1 { font-size: calc(1.7rem + 1.7rem);}
-h2 { font-size: calc(1.3rem + 0.75vw); margin-bottom:1rem; text-transform:capitalize;} 
-h3 { font-size: calc(1.2rem + 0.55vw); margin:0.5rem; }
-h4 { font-size: calc(0.8rem + 0.55vw); margin:0.5rem; color:rgb(75, 75, 75) } 
-p { font-size: 1rem;
-  font-size: 1.1rem;font-weight: 100;}
+h2 { font-size: calc(1.3rem + 0.75vw);} 
+h3 { font-size: calc(1.2rem + 0.55vw);}
+h4 { font-size: calc(0.8rem + 0.55vw);} 
+p { font-size: 1rem;}
 
 
 a { text-decoration: none;}
@@ -78,7 +94,7 @@ span {
   font-size: 2rem;
   color: rgb(243, 243, 243);
   background:rgb(221, 41, 41);
-  padding: 0.5rem 0.5rem;
+  padding: 0.3rem 0.3rem;
   border-radius:4px;
 }
 
@@ -280,14 +296,13 @@ border-radius:4px;
   .box1 {
 
     background-color: rgb(141, 207, 161);
-    color:white;
     
       }
     
     .box2{
      
     background-color: rgb(195, 141, 207);
-    color:white;
+    
        
     }
     
@@ -295,7 +310,6 @@ border-radius:4px;
       
     background-color: rgb(217, 235, 255);
             
-    color:white;
     }
 
      /* Design bildeboxer i flexcontainer */
@@ -311,7 +325,7 @@ border-radius:4px;
     background-color: rgb(141, 207, 161);
     padding:0;
     transform: scale(1.1);
-    color:antiquewhite;
+    color:rgb(49, 49, 49);
   }
   .flex-box p{
     padding-left:1.3rem;
@@ -330,19 +344,18 @@ border-radius:4px;
   
   .footer-grid-container{
 
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
-    gap:0.2rem;
+   display:grid;
+   grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+   gap:0.2rem;
   
-    background-color: var(--header-footer-desktop);
+   background-color: var(--header-footer-desktop);
     
-    padding:2rem;
-height:30rem;
+   padding:2rem;
+   height:30rem;
 
   }
 
   .footer-grid-container > * {
-    font-family:Arial, Helvetica, sans-serif;
   
 color: rgb(228, 228, 228);
 background:rgba(255, 255, 255, 0.060);
@@ -364,13 +377,11 @@ letter-spacing: 1px;
   }
 
   .footer-grid-container > p {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8rem;
     font-weight: 100;
   }
 
   .footer-grid-container > div p {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8rem;
     font-weight: 100;
     color: rgb(228, 228, 228);
